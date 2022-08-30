@@ -1,0 +1,29 @@
+.team-soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.team-soc-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    transition: background-color var(--transform--);
+}
+
+.team-soc-icon{
+    fill: #AFB1B8;
+    transition: fill var(--transform--);
+}
+.team-soc-link:hover,
+.team-soc-link:focus{
+    background-color: var(--accent-text-color);
+}
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon{
+   fill:var(--white-color);
+}

@@ -1,0 +1,23 @@
+.team-soc-link-footer{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+    transition: background-color var(--transform--);
+}
+.team-soc-icon-footer{
+    fill: var(--white-color);
+    transition: fill var(--transform--);
+}
+.team-soc-link-footer:hover,
+.team-soc-link-footer:focus{
+    background-color: var(--accent-text-color);
+}
+.team-soc-link-footer:hover .team-soc-icon,
+.team-soc-link-footer:focus .team-soc-icon{
+   fill:var(--white-color);
+}

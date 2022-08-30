@@ -1,0 +1,12 @@
+.backdrop{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0%;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: opacity var(--transform--),visibility var(--transform--);
+
+    &.is-hidden .modal{
+    transform: translate(-50%,-50%)scale(0) rotate(0);
+    }
+}
