@@ -836,6 +836,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-iput-wrap {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-iput-wrap {
     flex-direction: row;
   }
 }
@@ -878,14 +883,11 @@ body {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-input {
-    width: 358px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-input {
+    width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
