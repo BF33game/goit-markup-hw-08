@@ -246,6 +246,8 @@ body {
 
 .burger-soc {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .burger-soc__item {
@@ -255,12 +257,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
   padding-right: 10px;
+  margin-right: 10px;
 }
 .burger-soc__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.burger-soc__item:not(:first-child) {
-  padding-left: 10px;
 }
 
 .site-nav {
@@ -401,13 +401,37 @@ body {
 .section-hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mob/studio/header-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--background-color);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mob/studio/header-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/studio/header-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/studio/header-tablet@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/studio/header-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/studio/header-desktop@2x.jpg);
   }
 }
 
@@ -612,6 +636,7 @@ body {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding: 30px;
 }
 
 .team-name {
@@ -619,7 +644,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 
