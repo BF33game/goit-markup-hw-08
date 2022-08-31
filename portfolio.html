@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
+            
+            <a href="./index.html"class="logo header__top-logo">Web<span class="header__logo">Studio</span></a>
+           
+        
             <nav class="header__nav">
-            <a href="./index.html"class="logo">Web<span class="header__logo">Studio</span></a>
             <ul class="site-nav">
-                    <li class="site-nav__item "><a href="./index.html" class="site-nav__link">Студія</a></li>
-                    <li class="site-nav__item "><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
-                    <li class="site-nav__item "><a href="" class="site-nav__link">Контакти</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
                 </ul>
                 </nav>
             <ul class="auth-nav ">
@@ -38,8 +41,39 @@
                 </li>
             </ul>
         
+     <button class="burger-menu__open" type="submit" data-menu-open>
+        <svg class="burger-menu__svg" width="40" height="40">
+            <use href="./images/icons/icons.svg#icon-open-burger"></use>
+        </svg>
+    </button>
         </div>
-    </header> -->
+    <div class="burger-menu is-hidden" data-modal>
+        <div class="burger-menu__container container">
+            <button type="submit" class="burger-menu__close" data-menu-close>
+                <svg width="40" height="40">
+                    <use href="./images/icons/icons.svg#icon-close-mob"></use>
+                </svg>
+            </button>
+            <nav>
+            <ul class="mob-nav">
+                <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link">Студія</a></li>
+                <li class="mob-nav__item"><a href="./portfolio.html" class="mob-nav__link mob-nav__link--current">Портфоліо</a></li>
+                <li class="mob-nav__item"><a href="" class="mob-nav__link">Контакти</a></li>
+            </ul>
+            </nav>
+            <ul class="mob-auth-nav">
+              <li class="mob-auth-nav__item"><a href="tel:+380961111111" class="mob-auth-nav__tel">+38 096 111 11 11</a></li>
+              <li class="mob-auth-nav__item"><a href="mailto:info@devstudio.com" class="mob-auth-nav__mail">info@devstudio.com</a></li>
+            </ul>
+            <ul class="burger-soc">
+                <li class="burger-soc__item"><a href="" class="burger-soc__link">Instagram</a></li>
+                <li class="burger-soc__item"><a href="" class="burger-soc__link">Twitter</a></li>
+                <li class="burger-soc__item"><a href="" class="burger-soc__link">Facebook</a></li>
+                <li class="burger-soc__item"><a href="" class="burger-soc__link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
     <main>
         <section class="portfloio-foto section">
            <div class="container"> 
@@ -195,6 +229,7 @@
             </form>
         </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
 </body>
-</html> -->
+</html>
